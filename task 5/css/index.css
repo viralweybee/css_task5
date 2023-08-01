@@ -1,0 +1,76 @@
+.navbar {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+
+.navbar ul {
+  overflow: auto;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 13px 20px;
+}
+
+.navbar li a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar li a:hover {
+  color: red
+}
+
+#search-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#title {
+  font-size: 35px;
+}
+
+.layout1{
+  justify-content: center;
+  background-image: url(main1.png);
+  position: relative;
+  height: 45em;
+  width: 100%;
+}
+.back-img{
+ position: absolute;
+ bottom: 0%; 
+ color: rgb(212, 227, 222);
+ #color-pink{
+  color: pink;
+ }
+}
+.layout2-1{
+  text-align: center;
+  
+}
+.services ul{
+  display: flex;
+ 
+}
+.layout2{
+  position: relative;
+}
+.services li{
+  list-style: none;
+}
+.services{
+  position: absolute;
+ top: 50%;
+ left: 30%;
+
+}
+.l2{
+  padding: 5px;
+  text-decoration: none;
+}
+
