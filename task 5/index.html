@@ -9,24 +9,20 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="container">
-            <nav class="navbar">
-                <div class="left">
-                    <li id="title"><a href="#">Pitwo</a></li>
-                </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><img id="search-btn" src="images/search-icon.svg" alt=""></li>
-                    </ul>
-                </div>
-            </nav>
+    <div class="container">
+        <div class="left">
+            <a id="heading"href="">Pitwo</a>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><img id="search-btn"src="images/search-icon.svg" alt=""></li>
+            </ul>
         </div>
     </div>
     <div class="layout1">
@@ -43,6 +39,8 @@
         <div class="layout2-1">
             <h2>Our Portfolio</h2>
         </div>
+        <hr>
+        <br>
         <div class="services">
             <ul>
                 <li><a class="l2"href="#">All</a></li>
@@ -55,18 +53,20 @@
     </div>
     <div class="layout3">
         <ul>
-            <li><img src="images/main3.jpg" alt=""></li>
-            <li><img src="images/main4.webp" alt=""></li>
+            <li style="margin: 1%;"><img class="img3" src="images/main3.jpg" alt=""></li>
+            <li style="margin: 1%;"><img class="img3" src="images/main3.jpg" alt=""></li>
+            <li style="margin: 1%;"><img class="img3" src="images/main3.jpg" alt=""></li>
         </ul>
     </div>
-    <div class="layout 4">
-        <div class="">
+    <div class="layout 4" style="display: grid ;grid-auto-flow: column;
+    grid-auto-columns: 1fr;">
+        <div class="" flex-basis: 100%;>
             <h3>Pitwo</h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maxime impedit quidem tempora illo cumque.
-            Sapiente maiores eum temporibus minus omnis cum veritatis doloremque nisi, tenetur et! Eius, eos dolores.
-
+            <p style="padding: 0 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maxime impedit quidem tempora illo cumque.
+                Sapiente maiores eum temporibus minus omnis cum veritatis doloremque nisi, tenetur et! Eius, eos dolores.
+    </p>
         </div>
-        <div class="">
+        <div class="" flex-basis: 100%;>
             <h3>ENEWSLETTER</h3>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ex nisi totam possimus aspernatur aliquid nihil
             similique animi labore. Cupiditate vitae sint aut iure error ab obcaecati corporis culpa officia?
@@ -75,8 +75,11 @@
                 <input type="email" id="email" name="email">
             </form>
         </div>
-        <div class="">
+        <div class="" flex-basis: 100%;>
             <h3>LATEST BLOG POSTS</h3>
+        </div>
+        <div class="" flex-basis: 100%;>
+            <h3>Contact Us</h3>
         </div>
     </div>
 </body>
