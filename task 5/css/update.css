@@ -1,0 +1,138 @@
+.index{
+    position: relative;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.left a{
+    text-decoration: none;
+    color: black;
+}
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right a {
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+    font-size: 18px;
+}
+
+.right a:hover {
+    color: red;
+}
+
+#heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#search-btn {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.back-img {
+    position: absolute;
+    bottom: 0.5%;
+    left: 5%;
+    color: rgb(212, 227, 222);
+
+    #color-pink {
+        color: pink;
+    }
+}
+
+.layout1 {
+    justify-content: center;
+    background-image: url(main1.png);
+    position: relative;
+    height: 45em;
+    width: 100%;
+}
+.layout1-img{
+    position: absolute;
+    top: 15%;
+    left: .5%;
+}
+.layout1-1{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.services ul {
+    display: flex;
+    justify-content: center;
+}
+
+.layout2-1 h2 {
+    text-align: center;
+}
+
+.services li {
+    list-style: none;
+}
+
+.services a {
+    margin: 8px;
+    text-decoration: none;
+    color: grey;
+}
+.services a:hover{
+    color: black;
+}
+
+.layout2 hr {
+    margin: 0 400px 0 400px;
+}
+
+.layout3-img {
+    width: 100%;
+}
+
+.layout3-li {
+    margin: 1%;
+    list-style: none;
+}
+
+.layout3-ul {
+    display: flex;
+}
+
+.layout4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(1, 43, 1);
+    color: white;
+}
+
+.img-layout4-3 {
+    width: 70px;
+    height: 70px;
+}
+
+.li-layout4-3 {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.temp {
+    padding: 0;
+}
+.layout4-4-1{
+    width: 20px;
+    height: 20px;
+}
+.temp3{
+    display: flex;
+}
+.li-temp3{
+    list-style: none;
+    margin-left: 30px;
+    padding-right: 50px;
+}
