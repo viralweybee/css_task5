@@ -1,14 +1,19 @@
-.index{
-    position: relative;
+
+.body{
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
 }
+/* ------------------------------------------------- container --------------------------------------------------------------------------------*/
 .container {
     display: flex;
     justify-content: space-between;
 }
-.left a{
+
+.left a {
     text-decoration: none;
     color: black;
 }
+
 .right ul {
     display: flex;
     list-style: none;
@@ -36,65 +41,55 @@
     cursor: pointer;
 }
 
-.back-img {
-    position: absolute;
-    bottom: 0.5%;
-    left: 5%;
-    color: rgb(212, 227, 222);
+/* ---------------------------------------------------------------------------layout1----------------------------------------------------------- */
 
-    #color-pink {
-        color: pink;
-    }
-}
-
-/* .layout1 {
-    justify-content: center;
-    background-image: url(main1.png);
-    position: relative;
-    height: 45em;
+.slider {
+    height: 600px;
     width: 100%;
-} */
-
-.slider{
-	height: 300px;
-	width:100%;
-	position: relative;
-}
-.img-box img{
-	width:100%;
-    height: 300px;
-}
-.btn{
-	border:none;
-	outline:none;
-	padding:10px 30px;
-	font-size: 20px;
-	color:#ddd;
-	cursor: pointer;			 
-}
-.l-btn{
-	opacity: 50%;
-	position: absolute;
-	left: 0%;
-	bottom: 50%;
-}
-.r-btn{
-	opacity: 50%;
-	position: absolute;
-	bottom: 50%;
-	right: 0%;
+    position: relative;
 }
 
-.layout1-img{
+.img-box img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.l-btn {
+    opacity: 50%;
+    position: absolute;
+    left: 0%;
+    bottom: 30%;
+}
+
+.r-btn {
+    opacity: 50%;
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+}
+
+.layout1-img {
     position: absolute;
     top: 10%;
     left: .5%;
 }
-.layout1-1{
+
+.layout1-1 {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
+/* -----------------------------------------------------------layout 2---------------------------------------------------------------------- */
 .services ul {
     display: flex;
     justify-content: center;
@@ -113,39 +108,72 @@
     text-decoration: none;
     color: grey;
 }
-.services a:hover{
+
+.services a:hover {
     color: black;
 }
 
 .layout2 hr {
     margin: 0 400px 0 400px;
 }
-
+/*--------------------------------------------------------------- layout 3 ------------------------------------------------------------------*/
 .layout3-img {
     width: 100%;
 }
-
 .layout3-li {
     margin: 1%;
+    width: 100%;
     list-style: none;
 }
-
+.layout3{
+    position: relative;
+}
+.layout3-btn-div{
+    position: absolute;
+    opacity: 50%;
+    right: 0%;
+    top: 80%;
+}
 .layout3-ul {
     display: flex;
 }
+.layout3-btn{
+    cursor: pointer;
+}
 
+    /* -------------------------------------------------------------layout 4 --------------------------------------------------------------- */
 .layout4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* display: grid; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     background-color: rgb(1, 43, 1);
     color: white;
 }
-
+.layout4-1{
+    width: 20em;
+}
+.layout4-2{
+    width: 20em;
+}   
+.layout4-3{
+    width: 20em;
+}
+.layout4-4{
+    width: 20em;
+}
 .img-layout4-3 {
     width: 70px;
     height: 70px;
 }
-
+.layout4-2-email{
+    display: flex;
+}
+.layout4-2-img{
+    width: 20px;
+    height: 20px;
+}
 .li-layout4-3 {
     list-style: none;
     display: flex;
@@ -155,15 +183,32 @@
 ul.temp {
     padding: 0;
 }
-.layout4-4-1{
+
+.layout4-4-1 {
     width: 20px;
     height: 20px;
 }
-.temp3{
+
+.temp3 {
     display: flex;
 }
-.li-temp3{
+
+.li-temp3 {
     list-style: none;
-    margin-left: 30px;
+    margin-left: 4%;
     padding-right: 50px;
+}
+@media (max-width: 920px) { 
+    .layout3-img {
+        width: 100%;
+        height: 300px
+    }
+    .layout3-li {
+        margin: 1%;
+        list-style: none;
+    }
+    .layout3-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
